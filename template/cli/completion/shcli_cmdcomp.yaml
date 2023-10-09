@@ -1,0 +1,26 @@
+cmdcomp:
+  version: "2"
+app:
+  name: shcli
+root:
+  subcommands:
+    init:
+      arguments:
+        1: ["-"]
+    cd:
+      arguments:
+        1:
+          type: file
+          base_path: "$(dirname $(which shcli))/.."
+    edit:
+      arguments:
+        "*":
+          type: file
+          base_path: "$(dirname $(which shcli))/.."
+    self:
+      subcommands:
+        format:
+          arguments:
+            --dry-run:
+        lint:
+    help:
