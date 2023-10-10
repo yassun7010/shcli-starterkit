@@ -22,7 +22,7 @@ _complete() {
             --output "$output_file"
 
     else
-        docker run --rm -itv "$REPOSITORY_ROOT:/app/cmdcomp" yassun7010/cmdcomp:2.3 \
+        docker run --rm -itv "$REPOSITORY_ROOT:/app/cmdcomp" yassun7010/cmdcomp:2.5 \
             --file "$config_file" \
             --shell-type "$shell_type" \
             --output "$output_file"
