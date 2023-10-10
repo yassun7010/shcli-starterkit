@@ -33,7 +33,6 @@ install_shcli() {
 
     # copy template
     cp -r "$(dirname "$0")"/template/* .
-    rm bin/install-shcli
 
     # rename tool name.
     grep -r -e 'shcli-starterkit' -e 'shcli' bin/ cli/ | awk -F':' '{print $1}' | while read -r i; do
