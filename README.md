@@ -16,6 +16,22 @@ With this tool, you can create a cli for your project very easily.
 git clone git@github.com:yassun7010/shcli-starterkit.git
 ```
 
+### Install `cmdcomp`
+
+#### Docker
+
+If you are running dockerd, `cmdcomp` will automatically run using the Docker
+image.
+
+#### pipx
+
+If `cmdcomp` is installed locally, it takes precedence over the Docker Image
+method. You can use the following method to install `cmdcomp`.
+
+```sh
+pipx install cmdcomp
+```
+
 ### Set up your shell environment for `shcli`
 
 #### For `bash`
