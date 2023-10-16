@@ -12,7 +12,7 @@ shcli_command() {
     commands=$repository_root/cli/commands
 
     shell=$SHELL
-    cd_trap="${CD_TRAP:-"${XDG_CACHE_HOME:-~/.cache}/.cd_trap"}"
+    cd_trap="${CD_TRAP:-"${XDG_CACHE_HOME:-$HOME/.cache}/.cd_trap"}"
     subcommand_name=$1
     [ $# -gt 0 ] && shift
     case "$subcommand_name" in
