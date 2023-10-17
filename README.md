@@ -16,7 +16,7 @@ With this tool, you can create a cli for your project very easily.
 git clone git@github.com:yassun7010/shcli-starterkit.git
 ```
 
-### Install [`cmdcomp`](https://github.com/yassun7010/cmdcomp)
+### Install [cmdcomp](https://github.com/yassun7010/cmdcomp)
 
 #### Docker
 
