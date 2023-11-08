@@ -8,7 +8,7 @@ project.
 
 With this tool, you can create a cli for your project very easily.
 
-## Install
+## Usage
 
 ### Clone Repository
 
@@ -48,7 +48,7 @@ echo 'export PATH=$PATH:'"$(pwd)/bin" >> ~/.zsh_profile
 echo "[[ -x `which shcli` ]] && eval \"$(shcli init -)\"" >> ~/.zsh_profile
 ```
 
-## Usage
+### ⭐ Create your CLI ⭐
 
 Go to the repository where you want to install cli and execute the following
 command. As a result, The `cli` and `bin` directories will be created.
@@ -60,7 +60,11 @@ cd $YOUR_PROJECT
 PROJECT_NAME=
 COMMAND_NAME=
 install-shcli $PROJECT_NAME $COMMAND_NAME
+```
 
+### Your CLI Usage 📝
+
+```sh
 # Please read the README for instructions on how to use the generated cli tool.
 less cli/README.md
 ```
