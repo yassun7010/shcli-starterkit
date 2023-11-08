@@ -10,6 +10,7 @@ shcli_command() {
         pwd
     )
     commands=$repository_root/cli/commands
+    libs=$repository_root/cli/libs
 
     shell=$SHELL
     cd_trap="${CD_TRAP:-"${XDG_CACHE_HOME:-$HOME/.cache}/.cd_trap"}"
@@ -50,6 +51,7 @@ shcli_command() {
         PROJECT_NAME="$project_name" \
         COMMAND_NAME="$command_name" \
         COMMANDS="$commands" \
+        LIBS="$libs" \
         AWS_PROFILE="$project_name" \
         $subcommand_script "$@"
 }

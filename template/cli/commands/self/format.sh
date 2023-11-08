@@ -2,9 +2,12 @@
 
 set -e
 
+# shellcheck source=/dev/null
+. "$LIBS/help.sh"
+
 _format() {
     if [ ! -x "$(command -v shfmt)" ]; then
-        echo '"shfmt" command does not found.' 1>&2 && return 1
+        help_need_command shfmt && return 1
     fi
 
     if [ "$1" = "--dry-run" ]; then

@@ -2,10 +2,12 @@
 
 set -e
 
+# shellcheck source=/dev/null
+. "$LIBS/help.sh"
+
 _lint() {
     if [ ! -x "$(command -v shellcheck)" ]; then
-        echo '"shellcheck" command does not found.' 1>&2 && return 1
-        return 1
+        help_need_command shellcheck && return 1
     fi
 
     cd "$REPOSITORY_ROOT/cli"
