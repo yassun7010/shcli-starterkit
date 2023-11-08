@@ -7,7 +7,7 @@ set -e
 
 _format() {
     if [ ! -x "$(command -v shfmt)" ]; then
-        help_need_command shfmt && return 1
+        help_command_not_found shfmt && return 1
     fi
 
     if [ "$1" = "--dry-run" ]; then

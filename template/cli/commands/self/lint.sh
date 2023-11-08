@@ -7,7 +7,7 @@ set -e
 
 _lint() {
     if [ ! -x "$(command -v shellcheck)" ]; then
-        help_need_command shellcheck && return 1
+        help_command_not_found shellcheck && return 1
     fi
 
     cd "$REPOSITORY_ROOT/cli"

@@ -2,6 +2,6 @@
 
 set -e
 
-help_need_command() {
+help_command_not_found() {
     echo "\"$1\" command does not found." 1>&2
 }
