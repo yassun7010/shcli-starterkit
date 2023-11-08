@@ -54,11 +54,8 @@ Go to the repository where you want to install cli and execute the following
 command. As a result, The `cli` and `bin` directories will be created.
 
 ```sh
-YOUR_PROJECT=
 cd $YOUR_PROJECT
 
-PROJECT_NAME=
-COMMAND_NAME=
 install-shcli $PROJECT_NAME $COMMAND_NAME
 ```
 
