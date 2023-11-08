@@ -26,7 +26,7 @@ image.
 #### pipx
 
 If `cmdcomp` is installed locally, it takes precedence over the Docker Image
-method. You can use the following method to install `cmdcomp`.
+method. You can use the following method to install `cmdcomp` in local.
 
 ```sh
 pipx install cmdcomp
